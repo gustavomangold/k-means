@@ -1,2 +1,2 @@
-#A K-means algorithm for the detection of false banknotes 
+# A K-means algorithm for the detection of false banknotes 
 Using the scikitlearn library, we generate, by recursive feeding of the k-means algorithm, a graph that classifies the banknotes in two clusters. The blue cluster is composed of the real notes and the orange one composes the false notes. With a reading of some new note, we can then binarily classify the note into false or real. The algorithm is unsupervised.
