@@ -21,6 +21,7 @@ clusters = km.cluster_centers_
 print('Mean of V1:', mean[0], ', Std. Dev. of V1:', std_dev[0])
 print('Mean of V2:', mean[1], ', Std. Dev. of V2:', std_dev[1])
 
+#this part can be used to generate an 'error' ellipse around the mean, with two standard deviations
 #ellipse = patches.Ellipse([mean[0], mean[1]], std_dev[0]*2, std_dev[1]*2, alpha = 0.42, color = (1, 0, 0, 1))
 #plt.scatter(v1_new_1, v2_new_1, alpha = 0.4, s=50)
 #plt.scatter(v1_new_2, v2_new_2, alpha = 0.4, s=50)
