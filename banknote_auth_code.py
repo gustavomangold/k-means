@@ -4,8 +4,8 @@ import matplotlib.patches as patches
 import pandas as pd
 from sklearn.cluster import KMeans as kmeans
 
-data = pd.read_csv('auth_note_data.csv')
-data.sort_values('V1', inplace=True)
+data = pd.read_csv('auth_note_data.csv') 
+data.sort_values('V1', inplace=True) #reads the csv and sorts it by the first column
 
 v1 = data['V1']
 v2 = data['V2']
@@ -21,6 +21,7 @@ clusters = km.cluster_centers_
 print('Mean of V1:', mean[0], ', Std. Dev. of V1:', std_dev[0])
 print('Mean of V2:', mean[1], ', Std. Dev. of V2:', std_dev[1])
 
+#this part was used to create an error ellipse with two std dev
 #ellipse = patches.Ellipse([mean[0], mean[1]], std_dev[0]*2, std_dev[1]*2, alpha = 0.42, color = (1, 0, 0, 1))
 #plt.scatter(v1_new_1, v2_new_1, alpha = 0.4, s=50)
 #plt.scatter(v1_new_2, v2_new_2, alpha = 0.4, s=50)
