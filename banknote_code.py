@@ -1,3 +1,4 @@
+# really simple example
 # banknote authentication through k-means classification
 import numpy as np
 import matplotlib.pyplot as plt
